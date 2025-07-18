@@ -5,8 +5,7 @@ import numpy as np
 from tqdm import tqdm
 
 # 判断是否有可用的 GPU
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"Using device: {device}")
+device = torch.device("cuda")
 
 
 class PINN(nn.Module):
